@@ -8,7 +8,7 @@ df.fillna('0',inplace=True)
 df['CALIFICACIÓN NÚMERO'] = df['CALIFICACIÓN NÚMERO'].astype(int)
 
 st.header("Listado de estudiantes con calificaciones")
-tipo = st.radio("Buscar por: ",['Matrícula','Nombre'], None)
+tipo = st.radio("Buscar por: ",['Matrícula','Nombre'], index=None)
 
 
 if tipo == "Matrícula":
